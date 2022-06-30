@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        function operateAttributes() {
+            let node2 = document.getElementById("node2");
+            //设置font-style和font-size无效，这些属性脱离style单独设置是无效的
+            node2.setAttribute("style", "color:red;");
+            let node3 = document.getElementById("node3");
+            node3.setAttribute("font-size", undefined);
+            let node4 = document.getElementById("node4");
+            //font-style和font-size的remove无效，因为它们没有单独存在
+            node4.removeAttribute("font-size");
+            let node5 = document.getElementById("node5");
+            //无法获取font-style和font-size
+            let attributeNode = node5.getAttributeNode("style");
+            let attr = node5.removeAttributeNode(attributeNode);
+            node5.innerHTML = "attr=" + attr + ", attr.name=" + attr.name + ", attr.value=" + attr.value;
+        }
+    </script>
+</head>
+<body onload="operateAttributes()">
+<p id="node0" style="font-style:italic;font-size:12px;">0 Hello World</p>
+<p id="node1" font-size="12px" font-style="italic">1 Hello World : font-size、font-style等，这些属性脱离style单独设置是无效的</p>
+<p id="node2" style="font-style:italic;font-size:12px;">2 Hello World setAttribute</p>
+<p id="node3" style="font-style:italic;font-size:12px;">3 Hello World setAttribute</p>
+<p id="node4" style="font-style:italic;font-size:12px;">4 Hello World removeAttribute</p>
+<p id="node5" style="font-style:italic;font-size:12px;">5 Hello World getAttributeNode & removeAttributeNode</p>
+</body>
+</html>

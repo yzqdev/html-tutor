@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset=" utf-8">
+    <meta name="author" content="http://www.softwhy.com/" />
+    <title>蚂蚁部落</title>
+    <style>
+    ul li {
+        width: 300px;
+        list-style-type: none;
+        font-size: 12px;
+        line-height: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    ul li span {
+        float: right
+    }
+    </style>
+    <script>
+    window.onload = function() {
+        let obox = document.getElementById("box");
+        let lis = obox.getElementsByTagName("li");
+        let odiv = document.getElementById("show");
+        for (let index = 0; index < lis.length; index++) {
+            lis[index].onclick = (function(index) {
+                return function() {
+                    odiv.innerHTML = index;
+                }
+            })(index)
+        }
+    }
+
+    </script>
+</head>
+
+<body>
+    <ul id="box">
+        <li>蚂蚁部落一</li>
+        <li>蚂蚁部落二</li>
+        <li>蚂蚁部落三</li>
+        <li>蚂蚁部落四</li>
+        <li>蚂蚁部落五</li>
+    </ul>
+    <div id="show"></div>
+</body>
+
+</html>

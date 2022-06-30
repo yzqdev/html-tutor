@@ -1,0 +1,8 @@
+.all {
+
+    background: darkseagreen;
+    background-attachment: local;
+    background-color: deeppink;
+    background-image: -moz-element();
+
+}

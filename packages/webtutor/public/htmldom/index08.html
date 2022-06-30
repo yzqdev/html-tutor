@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=" utf-8">
+    <meta name="author" content="http://www.softwhy.com/" />
+    <title>蚂蚁部落</title>
+    <style type="text/css">
+        #ant{
+            width:100px;
+            height:60px;
+            line-height:60px;
+            text-align:center;
+            background-color:#ccc;
+        }
+    </style>
+    <script>
+        window.onload=function(){
+            let obox = document.getElementById("ant");
+            obox.onclick = function () {
+                let target = event.target;
+                obox.innerHTML=target.id;
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="ant"></div>
+</body>
+</html>

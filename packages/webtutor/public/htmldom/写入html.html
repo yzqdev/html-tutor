@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <head>
+      <meta charset="utf-8" />
+      <title>菜鸟教程(runoob.com)</title>
+      <script src="https://cdn.jsdelivr.net/npm/artplayer/dist/artplayer.js"></script>
+    </head>
+
+    <h1>我的第一个 Web 页面</h1>
+
+    <p>我的第一个段落。</p>
+    <div id="artplayer-app" style="width: 100vw; height: 100vh"></div>
+    <button onclick="myFunction()">点我</button>
+
+    <script>
+      //文档加载完成执行
+      //v9-xg-web-s.ixigua.com/99df3afae7d4cf9e2d536009b2749024/623df606/video/tos/cn/tos-cn-ve-4/effedd77050048a4bb259b9e93cf429a/?a=1768&br=4696&bt=4696&cd=0%7C0%7C0%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=4&er=0&ft=XeFp4qq3mvLPAYITz7V3w-ectfuWAJ0iM5&l=20220325235452010151079015042913A4&lr=default&mime_type=video_mp4&net=0&pl=0&qs=0&rc=MzxoOmg6Zmt2NzMzNDczM0ApaTs3ZGc0NDszNzY0ZzpmZ2c1bTNqcjRfMjZgLS1kLS9zcy0xYDQxXy9hYi5iXl5hNTQ6Yw%3D%3D&vl=&vr=
+      https: function myFunction() {
+        document.write(Date());
+      }
+      let art = new Artplayer({
+        container: "#artplayer-app",
+        playbackRate: true,
+        setting: true,
+        url: "https://v9-xg-web-s.ixigua.com/99df3afae7d4cf9e2d536009b2749024/623df606/video/tos/cn/tos-cn-ve-4/effedd77050048a4bb259b9e93cf429a/?a=1768&br=4696&bt=4696&cd=0%7C0%7C0%7C0&ch=0&cr=0&cs=0&cv=1&dr=0&ds=4&er=0&ft=XeFp4qq3mvLPAYITz7V3w-ectfuWAJ0iM5&l=20220325235452010151079015042913A4&lr=default&mime_type=video_mp4&net=0&pl=0&qs=0&rc=MzxoOmg6Zmt2NzMzNDczM0ApaTs3ZGc0NDszNzY0ZzpmZ2c1bTNqcjRfMjZgLS1kLS9zcy0xYDQxXy9hYi5iXl5hNTQ6Yw%3D%3D&vl=&vr=",
+      });
+    </script>
+  </body>
+</html>

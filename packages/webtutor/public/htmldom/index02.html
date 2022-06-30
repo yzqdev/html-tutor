@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>计数器</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+    <h2>hello</h2>
+    <form><input type="button" name="" value="开始计数" onclick="dotimer()">
+        <input type="text" name="" id="txt">
+        <input type="button" name="" value="停止计数" onclick="stopcount()"></form>
+    <script type="text/javascript">
+    let c = 0;
+    let t;
+    let time_is_on = 0;
+
+    function timecount() {
+        document.getElementById("txt").value = c;
+        c += 1;
+        t = setTimeout(() => {
+            timecount();
+        }, 1000);
+    }
+
+    function dotimer() {
+        if (!time_is_on) {
+            time_is_on = 1;
+            timecount();
+        }
+    }
+
+
+    function stopcount() {
+        clearTimeout(t);
+        time_is_on = 0;
+    }
+    </script>
+</body>
+
+</html>
