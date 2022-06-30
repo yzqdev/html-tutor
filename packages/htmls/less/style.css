@@ -1,0 +1,44 @@
+.demo-ul {
+  margin-bottom: 300px;
+}
+.demo-ul ul > li {
+  padding: 0 10px;
+  width: 100px;
+  background: #f90;
+  position: relative;
+}
+.demo-ul ul > li > a {
+  display: block;
+  height: 40px;
+  color: lightskyblue;
+  text-decoration: none;
+  line-height: 40px;
+  text-align: center;
+}
+.demo-ul ul > li > a:hover {
+  color: white;
+}
+.demo-ul ul > li ul {
+  position: absolute;
+  width: 100%;
+  top: 10px;
+  left: 80px;
+  transform: scaleY(0);
+  overflow: hidden;
+  list-style-type: none;
+}
+.demo-ul ul > li ul li {
+  float: none;
+  background: #0099ff;
+}
+.demo-ul ul > li ul li a {
+  color: lightpink;
+}
+.demo-ul ul > li:hover ul {
+  transform: scaleY(1);
+}
+.ul-transition ul {
+  transform-origin: 0 0;
+  transition: all 0.5s;
+  list-style-type: none;
+}
