@@ -6,12 +6,12 @@
     "name": "yzqdev",
     "email": "yzqdev@outlook.com"
   },
+  "source": "src/index.html",
   "scripts": {
-    "serve": "nodemon main.js"
+    "start": "parcel",
+    "build": "parcel build"
   },
-  "dependencies": {
-    "express": "^4.18.1",
-    "morgan": "^1.10.0",
-    "nodemon": "^2.0.18"
+  "devDependencies": {
+    "parcel": "latest"
   }
 }
