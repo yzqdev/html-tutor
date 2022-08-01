@@ -33,6 +33,5 @@ jobs:
 
         with:
           BRANCH: gh-pages
-          token: ${{ secrets.ACCESS_TOKEN }}
           FOLDER: dist
           single-commit: true
