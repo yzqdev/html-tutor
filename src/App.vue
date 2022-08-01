@@ -5,8 +5,8 @@
 </template>
 
 <script setup>
-import zhCn from "element-plus/lib/locale/lang/zh-cn";
-let locale = $ref(zhCn);
+import zhCn from 'element-plus/lib/locale/lang/zh-cn'
+let locale = $ref(zhCn)
 </script>
 
 <style>

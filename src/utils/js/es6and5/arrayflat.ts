@@ -1,19 +1,19 @@
-Array.prototype.myFlat = function(num = 1) {
+Array.prototype.myFlat = function (num = 1) {
   if (Array.isArray(this)) {
-    let arr = [];
+    let arr = []
     if (!Number(num) || Number(num) < 0) {
-      return this;
+      return this
     }
-    this.forEach(item => {
+    this.forEach((item) => {
       if (Array.isArray(item)) {
-        let count = num;
-        arr = arr.concat(item.myFlat(--count));
+        let count = num
+        arr = arr.concat(item.myFlat(--count))
       } else {
-        arr.push(item);
+        arr.push(item)
       }
-    });
-    return arr;
+    })
+    return arr
   } else {
-    throw this + ".flat is not a function";
+    throw this + '.flat is not a function'
   }
-};
+}

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900 flex relative h-full"><router-view /></div>
+  <div class="  flex relative h-full"><router-view /></div>
 </template>
 
 <script setup></script>

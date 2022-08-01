@@ -7,15 +7,15 @@
  * @FilePath: \jstutor\tstutor\thisfun.js
  */
 Function.prototype.mycall = function (context = window, ...args) {
-  context.fn = this;
-  console.log(this);
-  let result = context.fn(...args);
-  delete fn;
-  return result;
-};
-function adddd(a, b) {
-  let c = a + b;
-  console.log(c);
+  context.fn = this
+  console.log(this)
+  let result = context.fn(...args)
+  delete fn
+  return result
 }
-let c = {};
-adddd.mycall(c, 45, 555);
+function adddd(a, b) {
+  let c = a + b
+  console.log(c)
+}
+let c = {}
+adddd.mycall(c, 45, 555)

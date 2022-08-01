@@ -1,5 +1,2 @@
-<template>
-hello
-</template>
-<script setup lang="ts">
-</script>
+<template>hello</template>
+<script setup lang="ts"></script>

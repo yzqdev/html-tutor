@@ -1,9 +1,10 @@
-index.html
 package-lock.json
 yarn.lock
 .DS_Store
 node_modules
 /dist
+.cache
+.temp
 # local env files
 .env.local
 .env.*.local

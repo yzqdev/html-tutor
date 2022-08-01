@@ -1,0 +1,5 @@
+@[code](./arrayflat.ts)
+@[code](./ctrip.ts)
+@[code](./curryanalysis.ts)
+@[code](./index.ts)
+@[code](./proxytest.ts)

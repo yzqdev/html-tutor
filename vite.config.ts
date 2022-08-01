@@ -8,13 +8,16 @@ const resolve = path.resolve
 const pathSrc = path.resolve(__dirname, 'src')
 // https://vitejs.dev/config/
 export default defineConfig({
+  base:'/html-tutor/dist/',
+
   server: {
     port: 5600,
   },
   build: {
     target: 'esnext',
+    outDir:"dist/dist"
   },
- 
+
   plugins: [
     vue({ reactivityTransform: true }),
 

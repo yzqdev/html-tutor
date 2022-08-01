@@ -15,37 +15,37 @@
     <script>
       window.onload = function () {
         // 1、获取按钮，绑定点击事件
-        let myThrottle = document.getElementById("throttle");
-        myThrottle.addEventListener("click", throttle(sayThrottle));
-      };
+        let myThrottle = document.getElementById('throttle')
+        myThrottle.addEventListener('click', throttle(sayThrottle))
+      }
 
       // 2、节流函数体
       function throttle(fn) {
         // 4、通过闭包保存一个标记
-        let canRun = true;
-        console.log("最早的canrun" + canRun);
+        let canRun = true
+        console.log('最早的canrun' + canRun)
         return function (...args) {
           // 5、在函数开头判断标志是否为 true，不为 true 则中断函数
           if (!canRun) {
-            console.log("现在不能运行");
-            return;
+            console.log('现在不能运行')
+            return
           }
-          console.log(canRun);
+          console.log(canRun)
           // 6、将 canRun 设置为 false，防止执行之前再被执行
-          canRun = false;
+          canRun = false
           // 7、定时器
           setTimeout(() => {
-            console.log(canRun);
-            fn.call(this, args);
+            console.log(canRun)
+            fn.call(this, args)
             // 8、执行完事件（比如调用完接口）之后，重新将这个标志设置为 true
-            canRun = true;
-          }, 1000);
-        };
+            canRun = true
+          }, 1000)
+        }
       }
 
       // 3、需要节流的事件
       function sayThrottle() {
-        console.log("节流成功！");
+        console.log('节流成功！')
       }
     </script>
   </body>

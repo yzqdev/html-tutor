@@ -7,13 +7,15 @@
  * @FilePath: \jstutor\js\es6curry.js
  */
 //一行实现柯里化
-const curry = (fn, arr = []) => (...args) =>
-  ((arg) => (arg.length === fn.length ? fn(...arg) : curry(fn, arg)))([
-    ...arr,
-    ...args,
-  ]);
+const curry =
+  (fn, arr = []) =>
+  (...args) =>
+    ((arg) => (arg.length === fn.length ? fn(...arg) : curry(fn, arg)))([
+      ...arr,
+      ...args,
+    ])
 function add(a, b, c, d) {
-  return a + b + c + d; // body
+  return a + b + c + d // body
 }
-let addCurry = curry(add());
-console.log(addCurry(4)(5)(6));
+let addCurry = curry(add())
+console.log(addCurry(4)(5)(6))

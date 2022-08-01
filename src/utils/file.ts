@@ -14,7 +14,10 @@ export function fExt(filename: string) {
  */
 export function fName(filename: string) {
   filename = filename.replace(/\\/g, '/')
-  return filename.substring(filename.lastIndexOf('/') + 1, filename.lastIndexOf('.'))
+  return filename.substring(
+    filename.lastIndexOf('/') + 1,
+    filename.lastIndexOf('.')
+  )
 }
 
 /**
