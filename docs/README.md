@@ -6,8 +6,8 @@ actions:
 - text: 前端指南 💡
   link: /guide/
   type: primary
-- text: linux
-  link: /linux-tutor/
+- text: css教程
+  link:  https://yzqdev.github.io/html-tutor/dist/
   type: secondary
 
 features:

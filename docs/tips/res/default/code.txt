@@ -1,0 +1,6 @@
+@[code](./res/default/cl1.ts)
+@[code](./res/default/cl3.ts)
+@[code](./res/default/cl5.ts)
+@[code](./res/default/cl6.ts)
+@[code](./res/default/huiwen.ts)
+@[code](./res/default/myPromise.ts)

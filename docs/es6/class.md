@@ -1,1 +1,10 @@
 # class类
+@[code](./res/class/Animal.ts)
+@[code](./res/class/classes.ts)
+@[code](./res/class/enc.ts)
+@[code](./res/class/extend.ts)
+@[code](./res/class/ith.ts)
+@[code](./res/class/main.ts)
+@[code](./res/class/obj1.ts)
+@[code](./res/class/objtest.ts)
+@[code](./res/class/Pointer.ts)

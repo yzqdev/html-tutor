@@ -7,6 +7,7 @@ import {
 import NotFound from '@/components/NotFound.vue'
 import Home from '@/views/Home.vue'
 import HomeMain from '@/views/HomeMain.vue'
+import CssTwo from '@/views/cssLayout/Two.vue'
 let routes: RouteRecordRaw[] = [
   { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
   { path: '/home', redirect: '/home/main' },
@@ -24,6 +25,11 @@ let routes: RouteRecordRaw[] = [
       },
     ],
   },
+  {
+    path:'/css-two',
+    name:'CssTwo',
+    component:CssTwo
+  }
 ]
 
 const router = createRouter({

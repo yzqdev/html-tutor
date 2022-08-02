@@ -24,7 +24,7 @@
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue"
-  ],
+, "docs/basic/func.ts", "docs/es6/res/figure2.ts"  ],
   "references": [
     {
       "path": "./tsconfig.node.json"
