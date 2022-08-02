@@ -1,0 +1,1 @@
+import{_ as e,c}from"./index.8d37e95d.js";const t={},r=c('<div class="header">#header</div><div class="container"><div class="column center">#center</div><div class="column left">#left</div><div class="column right">#right</div></div><div class="footer">#footer</div>',3);function s(i,a){return r}var _=e(t,[["render",s]]);export{_ as default};

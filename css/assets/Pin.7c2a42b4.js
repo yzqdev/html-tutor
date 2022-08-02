@@ -1,0 +1,1 @@
+import{_,o as t,a as c,F as d,p as o,b as n,d as s}from"./index.8d37e95d.js";const i={},a=e=>(o("data-v-d8a2b226"),e=e(),n(),e),r=a(()=>s("div",{class:"div1"},"1",-1)),p=a(()=>s("div",{class:"div2"},"2",-1)),v=a(()=>s("div",{class:"div3"},"3",-1));function l(e,u){return t(),c(d,null,[r,p,v],64)}var h=_(i,[["render",l],["__scopeId","data-v-d8a2b226"]]);export{h as default};
