@@ -1,5 +1,5 @@
 <template>
-  <div class="  flex relative h-full"><router-view /></div>
+  <div class="m-4 flex relative h-full"><router-view /></div>
 </template>
 
 <script setup></script>

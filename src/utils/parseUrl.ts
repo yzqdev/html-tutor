@@ -3,7 +3,6 @@ const checkType = (obj) => Object.prototype.toString.call(obj).slice(8, -1)
 const deepClone = (obj) => {}
 console.log(checkType(null))
 
-
 const template = `我是{{name}}，年龄{{age}}，性别{{sex}}`
 const data = {
   name: `姓名`,

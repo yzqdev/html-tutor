@@ -1,47 +1,46 @@
-.lay1{
-  .header{
-    margin:0 auto;
+.lay1 {
+  .header {
+    margin: 0 auto;
     max-width: 960px;
-    height:100px;
+    height: 100px;
     background-color: blue;
   }
-  .content{
+  .content {
     margin: 0 auto;
     max-width: 960px;
     height: 400px;
     background-color: aquamarine;
   }
-  .footer{
+  .footer {
     margin: 0 auto;
     max-width: 960px;
     height: 100px;
     background-color: aqua;
   }
 }
-.lay2{
-  .header{
-    margin:0 auto;
+.lay2 {
+  .header {
+    margin: 0 auto;
     max-width: 960px;
-    height:100px;
+    height: 100px;
     background-color: blue;
   }
-  .nav{
+  .nav {
     margin: 0 auto;
     max-width: 800px;
     background-color: darkgray;
     height: 50px;
   }
-  .content{
+  .content {
     margin: 0 auto;
     max-width: 800px;
     height: 400px;
     background-color: aquamarine;
   }
-  .footer{
+  .footer {
     margin: 0 auto;
     max-width: 960px;
     height: 100px;
     background-color: aqua;
   }
-
 }

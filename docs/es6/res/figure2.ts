@@ -1,4 +1,3 @@
-
 {
   // eslint-disable-next-line no-console
   console.log(`________________________________________________`)
@@ -40,5 +39,3 @@
     console.log(res)
   })
 }
-
- 

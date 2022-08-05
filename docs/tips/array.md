@@ -254,3 +254,97 @@ let carsObj = cars.reduce(function (obj, name) {
 console.log(carsObj) // => { BMW: 2, Benz: 2, Tesla: 1, Toyota: 1 }
 console.timeEnd('测试开发')
 ```
+
+## compress
+
+```js
+let compress = function (chars) {
+  let char = chars[0]
+  let num = 0
+  let index = 0
+  let numArr = []
+  chars.forEach((item) => {
+    if (item === char) {
+      num++
+    } else {
+      chars[index] = char
+      if (1 < num && num < 10) {
+        index++
+        chars[index] = String(num)
+      } else if (num >= 10) {
+        numArr = String(num).split('')
+        numArr.forEach((n) => {
+          index++
+          chars[index] = String(n)
+        })
+      }
+      index++
+      char = item
+      num = 1
+    }
+  })
+  chars[index] = char
+  if (1 < num && num < 10) {
+    index++
+    chars[index] = String(num)
+  } else if (num >= 10) {
+    numArr = String(num).split('')
+    numArr.forEach((n) => {
+      index++
+      chars[index] = String(n)
+    })
+  }
+  index++
+  chars.length = index
+  console.log(chars)
+  return index
+}
+
+let arr = ['a', 'a', 'b', 'b', 'c', 'c', 'c']
+console.log(compress(arr))
+```
+
+## reduce
+
+```js
+let data = {
+  rows: [
+    ['Lisa', 16, 'Female', '2000-12-01'],
+    ['Bob', 22, 'Male', '1996-01-21'],
+  ],
+  metaData: [
+    {
+      name: 'name',
+      note: '',
+    },
+    {
+      name: 'age',
+      note: '',
+    },
+    {
+      name: 'gender',
+      note: '',
+    },
+    {
+      name: 'birthday',
+      note: '',
+    },
+  ],
+}
+
+let result = data.rows.reduce(function (prev1, cur1) {
+  prev1.push(
+    data.metaData.reduce(function (prev, cur, index) {
+      prev[cur.name] = cur1[index]
+      return prev
+    }, {})
+  )
+  return prev1
+}, [])
+
+console.log(result)
+console.log(result[0])
+console.log(result[1])
+
+export {}
+```

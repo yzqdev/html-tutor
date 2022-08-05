@@ -1,9 +1,9 @@
 <template>
-<div class="awesome">
+  <div class="awesome">
     <div class="container">
-        <div class="battery"></div>
+      <div class="battery"></div>
     </div>
-</div>
+  </div>
 </template>
 <style lang="scss" scoped>
 html,
@@ -82,5 +82,4 @@ body {
       0 10px 10px rgba(9, 188, 215, 0.4);
   }
 }
-
 </style>

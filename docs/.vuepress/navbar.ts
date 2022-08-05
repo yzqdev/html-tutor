@@ -7,5 +7,9 @@ export default navbar([
   { text: 'es6', icon: 'javascript', link: '/es6/' },
   { text: '面试', icon: 'creative', link: '/interview/' },
   { text: '技巧', icon: 'creative', link: '/tips/' },
-  { text: 'css', icon: 'css', link: 'https://yzqdev.github.io/html-tutor/css/' },
+  {
+    text: 'css',
+    icon: 'css',
+    link: 'https://yzqdev.github.io/html-tutor/css/',
+  },
 ])

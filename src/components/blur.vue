@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Title</title>
+ 
     <style>
       html {
         height: 101%;
@@ -74,11 +70,11 @@
         background: #e2eae2;
       }
     </style>
-  </head>
-  <body>
+ 
+  <template>
     <div class="box-shadow"></div>
     <h4 class="blurry-text">这是问题</h4>
     <h4 class="loading"></h4>
     <h4>这是选择区域</h4>
-  </body>
-</html>
+   
+</template>
