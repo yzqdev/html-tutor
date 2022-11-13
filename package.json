@@ -15,30 +15,29 @@
     "lint": "prettier --write src/**/*.{vue,ts,css,scss,html,js} docs/**/*.ts"
   },
   "dependencies": {
-    "dayjs": "^1.11.5",
-    "element-plus": "^2.2.17",
+    "dayjs": "^1.11.6",
+    "element-plus": "^2.2.21",
     "mitt": "^3.0.0",
     "pinia": "^2.0.23",
-    "vue": "^3.2.40",
-    "vue-router": "^4.1.5"
+    "vue": "^3.2.45",
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
-    "@types/node": "^18.8.4",
+    "@types/node": "^18.11.0",
     "@vitejs/plugin-vue": "^3.1.2",
-    "@vuepress/cli": "2.0.0-beta.51",
-    "@vuepress/client": "2.0.0-beta.51",
-    "@vueuse/core": "^9.3.0",
-    "autoprefixer": "^10.4.12",
-    "postcss": "^8.4.17",
+    "@vuepress/cli": "2.0.0-beta.53",
+    "@vuepress/client": "2.0.0-beta.53",
+    "@vueuse/core": "^9.5.0",
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
     "prettier": "^2.7.1",
-    "sass": "^1.55.0",
-    "tailwindcss": "^3.1.8",
+    "sass": "^1.56.1",
+    "tailwindcss": "^3.2.4",
     "typescript": "^4.8.4",
-    "unplugin-auto-import": "^0.11.2",
-    "unplugin-vue-components": "^0.22.8",
-    "vite": "^3.1.7",
-    "vuepress": "2.0.0-beta.51",
-    "vuepress-theme-hope": "2.0.0-beta.109",
-    "vuepress2-plugin-full-text-search": "0.4.0"
+    "unplugin-auto-import": "^0.11.4",
+    "unplugin-vue-components": "^0.22.9",
+    "vite": "^3.2.3",
+    "vuepress": "2.0.0-beta.53",
+    "vuepress-theme-hope": "2.0.0-beta.122"
   }
 }

@@ -1,7 +1,6 @@
 import { defineUserConfig } from 'vuepress'
 
 import theme from './theme'
-import SearchPlugin from 'vuepress2-plugin-full-text-search'
 export default defineUserConfig({
   base: '/html-tutor/',
   dest: './dist',
@@ -42,12 +41,6 @@ export default defineUserConfig({
   theme: theme,
 
   plugins: [
-    SearchPlugin({
-      locales: {
-        '/': {
-          placeholder: '搜索文档',
-        },
-      },
-    }),
+
   ],
 })
