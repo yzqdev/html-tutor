@@ -5,6 +5,7 @@ export default sidebar({
   '/algorithm/': 'structure',
   '/basic/': 'structure',
   '/es6/': 'structure',
+  '/framework/': 'structure',
   '/interview/': 'structure',
   '/tips/': 'structure',
 })
