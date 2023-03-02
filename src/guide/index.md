@@ -7,5 +7,6 @@
 <script setup>
 import NoCopy from './comp/NoCopy.vue'
 </script>
-
-<NoCopy />
+<ClientOnly>
+ <NoCopy />
+</ClientOnly>

@@ -5,7 +5,7 @@ export default defineConfig({
   base: '/html-tutor/css/',
 
   // site-level locales config
-  outDir: '../dist',
+  outDir: '../dist/css',
   head: [
     // ['link', { rel: 'shortcut icon', type: 'image/png', href: '/hero.png' }],
     // ['link', { rel: 'shortcut icon', type: 'image/png', href: '/hero.png' }],
