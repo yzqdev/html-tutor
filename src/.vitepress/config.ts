@@ -12,7 +12,7 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/vue.svg' }],
   ],
   lang: 'zh-CN',
-  title: 'VitePress',
+  title: 'css教程',
   description: 'Vue 驱动的静态网站生成器',
   vue: {
     reactivityTransform: true,

@@ -46,7 +46,7 @@ export const sidebar: DefaultTheme.Sidebar = {
       items: [
         { text: '主页', link: '/css-tutor/index' },
         { text: 'tutor1', link: '/css-tutor/css-prop' },
-        { text: 'tutor2', link: '/css-tutor/css-layout' },
+        { text: 'layout', link: '/css-tutor/css-layout' },
       ],
     },
   ],
