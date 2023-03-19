@@ -16,8 +16,8 @@
     ],
     "baseUrl": ".",
     "paths": {
-      // "@/*": ["src/*"],
-      "@guide/*": ["src/guide/*"]
+        "@/*": ["src/*"],
+      "css/*": ["src/css-tutor/css/*"]
     }
   },
   "include": [
