@@ -20,7 +20,9 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/vue.svg',
-
+    search: {
+      provider: 'local'
+    },
     // theme-level locales config
 
     // navbar

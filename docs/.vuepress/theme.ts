@@ -1,70 +1,70 @@
-import { hopeTheme } from 'vuepress-theme-hope/perf'
+import {hopeTheme} from 'vuepress-theme-hope'
 import navbar from './navbar'
 import sidebar from './sidebar'
 
 export default hopeTheme(
-  {
-    iconAssets: 'iconfont',
+    {
+        iconAssets: 'iconfont',
+        pcBreakPoint: 1600,
+        logo: '/logo.svg',
 
-    logo: '/logo.svg',
+        repo: 'yzqdev/html-tutor',
 
-    repo: 'yzqdev/html-tutor',
+        docsDir: 'docs',
 
-    docsDir: 'docs',
+        // navbar
+        navbar: navbar,
 
-    // navbar
-    navbar: navbar,
+        // sidebar
+        sidebar: sidebar,
 
-    // sidebar
-    sidebar: sidebar,
+        footer: `powered by <a href='https://vuepress-theme-hope.github.io/v2/'>vuepress-theme-hope</a>`,
 
-    footer: `powered by <a href='https://vuepress-theme-hope.github.io/v2/'>vuepress-theme-hope</a>`,
+        displayFooter: true,
 
-    displayFooter: true,
+        pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
 
-    pageInfo: ['Author', 'Original', 'Date', 'Category', 'Tag', 'ReadingTime'],
-
-    plugins: {
-      blog: false,
-      prismjs: {
-        light: 'tomorrow',
-        dark: 'tomorrow',
-      },
-
-      mdEnhance: {
-        tabs: true,
-        codetabs: true,
-        demo: true,
-        sub: true,
-        sup: true,
-        footnote: true,
-        mark: true,
-        vuePlayground: true,
-        include: true,
-        //start playground 配置
-        playground: {
-          presets: [
-            'ts',
-            'vue',
-            {
-              name: 'playground#language',
-              component: 'PlaygroundComponent',
-              propsGetter: (playgroundData): Record<string, string> => ({
-                // playground props
-              }),
+        plugins: {
+            blog: false,
+            prismjs: {
+                light: 'tomorrow',
+                dark: 'tomorrow',
             },
-          ],
-          config: {
-            ts: {
-              // ...
+
+            mdEnhance: {
+                tabs: true,
+                codetabs: true,
+                demo: true,
+                sub: true,
+                sup: true,
+                footnote: true,
+                mark: true,
+                vuePlayground: true,
+                include: true,
+                //start playground 配置
+                playground: {
+                    presets: [
+                        'ts',
+                        'vue',
+                        {
+                            name: 'playground#language',
+                            component: 'PlaygroundComponent',
+                            propsGetter: (playgroundData): Record<string, string> => ({
+                                // playground props
+                            }),
+                        },
+                    ],
+                    config: {
+                        ts: {
+                            // ...
+                        },
+                        vue: {
+                            // ...
+                        },
+                    },
+                },
             },
-            vue: {
-              // ...
-            },
-          },
         },
-      },
     },
-  },
-  true
+    {custom: true}
 )

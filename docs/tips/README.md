@@ -1,1 +1,2 @@
 # 技巧
+<AutoCatalog   />
