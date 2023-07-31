@@ -1,0 +1,10 @@
+# class类
+<<< ./res/class/Animal.ts
+<<< ./res/class/classes.ts
+<<< ./res/class/enc.ts
+<<< ./res/class/extend.ts
+<<< ./res/class/ith.ts
+<<< ./res/class/main.ts
+<<< ./res/class/obj1.ts
+<<< ./res/class/objtest.ts
+<<< ./res/class/Pointer.ts

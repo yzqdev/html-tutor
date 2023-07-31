@@ -1,27 +1,25 @@
-import { defineConfig } from "vitepress";
-import { navbar } from "./nav";
-import { sidebar } from "./sidebar";
+import { defineConfig } from 'vitepress'
+import { navbar } from './nav'
+import { sidebar } from './sidebar'
 export default defineConfig({
-  base: '/html-tutor/css/',
+  base: '/html-tutor/',
 
   // site-level locales config
-  outDir: '../dist/css',
+
   head: [
     // ['link', { rel: 'shortcut icon', type: 'image/png', href: '/hero.png' }],
     // ['link', { rel: 'shortcut icon', type: 'image/png', href: '/hero.png' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/vue.svg' }],
   ],
   lang: 'zh-CN',
-  title: 'css教程',
+  title: 'html教程',
   description: 'Vue 驱动的静态网站生成器',
-  vue: {
-    reactivityTransform: true,
-  },
+  vue: {},
 
   themeConfig: {
     logo: '/vue.svg',
     search: {
-      provider: 'local'
+      provider: 'local',
     },
     // theme-level locales config
 
@@ -30,11 +28,11 @@ export default defineConfig({
 
     sidebar: sidebar,
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/yzqtpl/vitepress-starter' },
+      { icon: 'github', link: 'https://github.com/yzqdev/html-tutor' },
     ],
     editLink: {
       pattern:
-        'https://github.com/yzqtpl/vitepress-starter/edit/main/docs/:path',
+        'https://github.com/yzqdev/html-tutor/edit/main/src/:path',
       text: 'Edit this page on GitHub',
     },
     footer: {

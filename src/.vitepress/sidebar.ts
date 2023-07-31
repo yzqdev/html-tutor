@@ -1,41 +1,99 @@
-import { DefaultTheme } from "vitepress";
+import { DefaultTheme } from 'vitepress'
 
 export const sidebar: DefaultTheme.Sidebar = {
-  '/views': [
+  '/es6': [
     {
       text: '视图',
       collapsed: false,
       items: [
-        { text: 'dom首页', link: '/views/dom/index' },
-        { text: 'layout', link: '/views/cssLayout/index' },
+        { text: '类', link: '/es6/class' },
+        { text: '结构', link: '/es6/deconstruct' },
+        { text: 'let', link: '/es6/let' },
+        { text: 'promise', link: '/es6/promise' },
+        { text: 'map', link: '/es6/set-map' },
+        { text: 'proxy', link: '/es6/proxy' },
+        { text: 'symbol', link: '/es6/symbol' },
+        { text: '原形', link: '/es6/prototype' },
+        { text: '基础', link: '/es6/basic' },
       ],
     },
   ],
   '/guide': [
     {
-      text: 'theme配置',
+      text: '首页',
       collapsed: false,
 
       items: [{ text: '首页', link: '/guide/index' }],
     },
     {
-      text: 'app配置',
-      collapsed: true,
+      text: '指导',
+      collapsed:  false,
       items: [
-        { text: 'guide1', link: '/guide/markdown' },
-        { text: 'guide2', link: '/guide/sidebar' },
-        { text: 'images', link: '/guide/img-handle' },
+        { text: '数组', link: '/guide/array' },
+
         { text: 'api', link: '/guide/api' },
       ],
     },
   ],
   '/dom-tutor': [
     {
-      text: '插件',
-      collapsed: true,
+      text: 'dom元素',
+      collapsed:  false,
       items: [
-        { text: 'plugin1', link: '/dom-tutor/side1' },
-        { text: 'plugin2', link: '/dom-tutor/side2' },
+        { text: '首页', link: '/dom-tutor/' },
+        { text: 'dom方法', link: '/dom-tutor/dom' },
+        { text: '创建', link: '/dom-tutor/create-dom' },
+        { text: '不可复制', link: '/dom-tutor/no-copy' },
+      ],
+    },
+  ],
+  '/tips': [
+    {
+      text: '技巧',
+      collapsed:  false,
+      items: [
+        { text: '数组', link: '/tips/array' },
+        { text: '冒泡', link: '/tips/bubble' },
+        { text: 'string', link: '/tips/string' },
+        { text: '片段', link: '/tips/snip' },
+        { text: '三十秒代码', link: '/tips/thirty-seconds' },
+      ],
+    },
+  ],
+  '/interview': [
+    {
+      text: '面试',
+      collapsed:  false,
+      items: [
+        { text: '首页', link: '/interview/' },
+        { text: '冒泡', link: '/interview/first' },
+        {
+          text: '手写代码',
+          collapsed: false,
+          items: [
+            { text: '第一个', link: '/interview/handwritten/first' },
+            { text: '第2个', link: '/interview/handwritten/second' },
+            { text: '第3个', link: '/interview/handwritten/third' },
+          ],
+        },
+        {
+          text: '试题',
+          collapsed:  false,
+          items: [
+            { text: '首页', link: '/interview/exam/' },
+            { text: '携程', link: '/interview/exam/ctrip' },
+          ],
+        },
+      ],
+    },
+  ],
+  '/algorithm': [
+    {
+      text: '算法',
+      collapsed:  false,
+      items: [
+        { text: '首页', link: '/algorithm/index' },
+        { text: '排序', link: '/algorithm/order' },
       ],
     },
   ],
@@ -45,8 +103,9 @@ export const sidebar: DefaultTheme.Sidebar = {
       collapsed: false,
       items: [
         { text: '主页', link: '/css-tutor/index' },
-        { text: 'tutor1', link: '/css-tutor/css-prop' },
+        { text: '操作', link: '/css-tutor/css-prop' },
         { text: 'layout', link: '/css-tutor/css-layout' },
+        { text: '三角形', link: '/css-tutor/triangle' },
       ],
     },
   ],
@@ -55,8 +114,8 @@ export const sidebar: DefaultTheme.Sidebar = {
       text: '其他',
       collapsed: true,
       items: [
-        { text: 'outline', link: '/others/outline' },
-        { text: '配置', link: '/others/conf' },
+        { text: 'outline', link: 'https://yzqdev.github.io/cs-guide/' },
+
       ],
     },
   ],

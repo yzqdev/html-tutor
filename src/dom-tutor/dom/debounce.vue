@@ -32,14 +32,14 @@ const da = new Date()
 let biu = function () {
   console.log(
     'biu biu biu',
-    `${da.getHours()}:${da.getMinutes()}:${da.getSeconds()}`
+    `${da.getHours()}:${da.getMinutes()}:${da.getSeconds()}`,
   )
 }
 
 let boom = function () {
   console.log(
     'boom boom boom',
-    `${da.getHours()}:${da.getMinutes()}:${da.getSeconds()}`
+    `${da.getHours()}:${da.getMinutes()}:${da.getSeconds()}`,
   )
 }
 

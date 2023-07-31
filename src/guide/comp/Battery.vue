@@ -54,7 +54,8 @@ body {
       #2196f3 100%
     );
     border-radius: 0px 0px 5px 5px;
-    box-shadow: 0 14px 28px rgba(33, 150, 243, 0),
+    box-shadow:
+      0 14px 28px rgba(33, 150, 243, 0),
       0 10px 10px rgba(9, 188, 215, 0.08);
     animation: charging 6s linear infinite;
     filter: hue-rotate(90deg);
@@ -63,7 +64,8 @@ body {
 
 @keyframes charging {
   50% {
-    box-shadow: 0 14px 28px rgba(0, 150, 136, 0.83),
+    box-shadow:
+      0 14px 28px rgba(0, 150, 136, 0.83),
       0px 4px 10px rgba(9, 188, 215, 0.4);
   }
 
@@ -71,14 +73,16 @@ body {
     top: 5%;
     filter: hue-rotate(0deg);
     border-radius: 0 0 5px 5px;
-    box-shadow: 0 14px 28px rgba(4, 188, 213, 0.2),
+    box-shadow:
+      0 14px 28px rgba(4, 188, 213, 0.2),
       0 10px 10px rgba(9, 188, 215, 0.08);
   }
   100% {
     top: 0%;
     filter: hue-rotate(0deg);
     border-radius: 15px 15px 5px 5px;
-    box-shadow: 0 14px 28px rgba(4, 188, 213, 0),
+    box-shadow:
+      0 14px 28px rgba(4, 188, 213, 0),
       0 10px 10px rgba(9, 188, 215, 0.4);
   }
 }

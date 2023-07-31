@@ -1,4 +1,5 @@
-import { DefaultTheme } from "vitepress/types/default-theme";
+import { DefaultTheme } from 'vitepress/types/default-theme'
+
 export const navbar: DefaultTheme.NavItem[] = [
   {
     text: '主页',
@@ -6,26 +7,40 @@ export const navbar: DefaultTheme.NavItem[] = [
     link: '/guide/',
   },
   {
-    text: 'css主页',
+    text: 'css',
     activeMatch: '^/css-tutor/',
     link: '/css-tutor/',
   },
   {
-    text: '插件',
+    text: 'dom',
     activeMatch: '^/dom-tutor/',
-    link: '/dom-tutor/side1',
+    link: '/dom-tutor/',
   },
   {
-    text: '侧边',
-    activeMatch: '^/others/',
-    link: '/others/',
+    text: 'es6',
+    activeMatch: '^/es6/',
+    link: '/es6/',
+  },
+  {
+    text: '算法',
+    activeMatch: '^/algorithm/',
+    link: '/algorithm/',
+  },
+  {
+    text: 'tips',
+    activeMatch: '^/tips/',
+    link: '/tips/',
+  },
+  {
+    text: '面试',
+    activeMatch: '^/interview/',
+    link: '/interview/',
   },
   {
     text: '其他',
     items: [
-      { text: 'index', link: '/others/index' },
-      { text: 'conf', link: '/others/conf' },
-      { text: 'outline', link: '/others/outline' },
+      { text: '计算机教程', link: 'https://yzqdev.github.io/cs-guide/' },
+
     ],
   },
 ]

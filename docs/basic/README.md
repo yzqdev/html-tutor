@@ -1,2 +1,0 @@
-# 基础js
-<AutoCatalog   />

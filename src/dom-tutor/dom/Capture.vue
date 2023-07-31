@@ -1,5 +1,4 @@
-<style lang="scss">
-</style>
+<style lang="scss"></style>
 
 <template>
   <div class="grandparent">
@@ -8,9 +7,9 @@
 </template>
 
 <script setup lang="ts">
-import {ref,onMounted} from 'vue'
+import { ref, onMounted } from 'vue'
 onMounted(() => {
-  console.log("mounted事件")
+  console.log('mounted事件')
   function addEvent(el, event, callback, isCapture = false) {
     if (!el || !event || !callback || typeof callback !== 'function') return
     if (typeof el === 'string') {
