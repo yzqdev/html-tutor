@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.97257f7d.js";const D=JSON.parse('{"title":"代码片段","description":"","frontmatter":{},"headers":[],"relativePath":"tips/snip.md","filePath":"tips/snip.md"}'),p={name:"tips/snip.md"},o=l("",20),e=[o];function t(c,r,y,i,B,E){return n(),a("div",null,e)}const u=s(p,[["render",t]]);export{D as __pageData,u as default};

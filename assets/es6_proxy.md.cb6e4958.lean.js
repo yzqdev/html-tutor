@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.97257f7d.js";const A=JSON.parse('{"title":"proxy和reflect","description":"","frontmatter":{},"headers":[],"relativePath":"es6/proxy.md","filePath":"es6/proxy.md"}'),p={name:"es6/proxy.md"},o=l("",23),e=[o];function t(c,r,y,B,i,E){return n(),a("div",null,e)}const g=s(p,[["render",t]]);export{A as __pageData,g as default};

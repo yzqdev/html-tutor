@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as o,Q as a}from"./chunks/framework.97257f7d.js";const f=JSON.parse('{"title":"原形链","description":"","frontmatter":{},"headers":[],"relativePath":"es6/prototype.md","filePath":"es6/prototype.md"}'),p={name:"es6/prototype.md"},l=a("",2),t=[l];function e(c,r,y,i,B,A){return n(),o("div",null,t)}const _=s(p,[["render",e]]);export{f as __pageData,_ as default};

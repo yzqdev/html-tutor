@@ -1,0 +1,45 @@
+import{_ as s,o as a,c as n,Q as l}from"./chunks/framework.97257f7d.js";const f=JSON.parse('{"title":"第一个","description":"","frontmatter":{},"headers":[],"relativePath":"interview/first.md","filePath":"interview/first.md"}'),p={name:"interview/first.md"},o=l(`<h1 id="第一个" tabindex="-1">第一个 <a class="header-anchor" href="#第一个" aria-label="Permalink to &quot;第一个&quot;">​</a></h1><h2 id="valid" tabindex="-1">valid <a class="header-anchor" href="#valid" aria-label="Permalink to &quot;valid&quot;">​</a></h2><div class="language-js vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">js</span><pre class="shiki solarized-light vp-code-dark"><code><span class="line"><span style="color:#93A1A1;font-style:italic;">// object validation rules</span></span>
+<span class="line"><span style="color:#586E75;font-weight:bold;">const</span><span style="color:#657B83;"> </span><span style="color:#268BD2;">schema</span><span style="color:#657B83;"> </span><span style="color:#859900;">=</span><span style="color:#657B83;"> {</span></span>
+<span class="line"><span style="color:#657B83;">  first: {</span></span>
+<span class="line"><span style="color:#657B83;">    required: </span><span style="color:#B58900;">true</span><span style="color:#657B83;">,</span></span>
+<span class="line"><span style="color:#657B83;">  },</span></span>
+<span class="line"><span style="color:#657B83;">  last: {</span></span>
+<span class="line"><span style="color:#657B83;">    required: </span><span style="color:#B58900;">true</span><span style="color:#657B83;">,</span></span>
+<span class="line"><span style="color:#657B83;">  },</span></span>
+<span class="line"><span style="color:#657B83;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#93A1A1;font-style:italic;">// universal validation function</span></span>
+<span class="line"><span style="color:#586E75;font-weight:bold;">const</span><span style="color:#657B83;"> </span><span style="color:#268BD2;">validate</span><span style="color:#657B83;"> </span><span style="color:#859900;">=</span><span style="color:#657B83;"> (schema, values) </span><span style="color:#586E75;font-weight:bold;">=&gt;</span><span style="color:#657B83;"> {</span></span>
+<span class="line"><span style="color:#657B83;">  </span><span style="color:#859900;">for</span><span style="color:#657B83;"> (</span><span style="color:#268BD2;">field</span><span style="color:#657B83;"> </span><span style="color:#859900;">in</span><span style="color:#657B83;"> </span><span style="color:#268BD2;">schema</span><span style="color:#657B83;">) {</span></span>
+<span class="line"><span style="color:#657B83;">    </span><span style="color:#859900;">if</span><span style="color:#657B83;"> (</span><span style="color:#268BD2;">schema</span><span style="color:#657B83;">[</span><span style="color:#268BD2;">field</span><span style="color:#657B83;">].</span><span style="color:#268BD2;">required</span><span style="color:#657B83;">) {</span></span>
+<span class="line"><span style="color:#657B83;">      </span><span style="color:#859900;">if</span><span style="color:#657B83;"> (</span><span style="color:#859900;">!</span><span style="color:#268BD2;">values</span><span style="color:#657B83;">[</span><span style="color:#268BD2;">field</span><span style="color:#657B83;">]) {</span></span>
+<span class="line"><span style="color:#657B83;">        </span><span style="color:#859900;">return</span><span style="color:#657B83;"> </span><span style="color:#B58900;">false</span></span>
+<span class="line"><span style="color:#657B83;">      }</span></span>
+<span class="line"><span style="color:#657B83;">    }</span></span>
+<span class="line"><span style="color:#657B83;">  }</span></span>
+<span class="line"><span style="color:#657B83;">  </span><span style="color:#859900;">return</span><span style="color:#657B83;"> </span><span style="color:#B58900;">true</span></span>
+<span class="line"><span style="color:#657B83;">}</span></span>
+<span class="line"><span style="color:#268BD2;">console</span><span style="color:#657B83;">.</span><span style="color:#268BD2;">log</span><span style="color:#657B83;">(</span><span style="color:#268BD2;">validate</span><span style="color:#657B83;">(</span><span style="color:#268BD2;">schema</span><span style="color:#657B83;">, { first: </span><span style="color:#2AA198;">&#39;Bruce&#39;</span><span style="color:#657B83;"> })) </span><span style="color:#93A1A1;font-style:italic;">// false</span></span>
+<span class="line"><span style="color:#268BD2;">console</span><span style="color:#657B83;">.</span><span style="color:#268BD2;">log</span><span style="color:#657B83;">(</span><span style="color:#268BD2;">validate</span><span style="color:#657B83;">(</span><span style="color:#268BD2;">schema</span><span style="color:#657B83;">, { first: </span><span style="color:#2AA198;">&#39;Bruce&#39;</span><span style="color:#657B83;">, last: </span><span style="color:#2AA198;">&#39;Wayne&#39;</span><span style="color:#657B83;"> })) </span><span style="color:#93A1A1;font-style:italic;">// true</span></span></code></pre><pre class="shiki github-light vp-code-light"><code><span class="line"><span style="color:#6A737D;">// object validation rules</span></span>
+<span class="line"><span style="color:#D73A49;">const</span><span style="color:#24292E;"> </span><span style="color:#005CC5;">schema</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> {</span></span>
+<span class="line"><span style="color:#24292E;">  first: {</span></span>
+<span class="line"><span style="color:#24292E;">    required: </span><span style="color:#005CC5;">true</span><span style="color:#24292E;">,</span></span>
+<span class="line"><span style="color:#24292E;">  },</span></span>
+<span class="line"><span style="color:#24292E;">  last: {</span></span>
+<span class="line"><span style="color:#24292E;">    required: </span><span style="color:#005CC5;">true</span><span style="color:#24292E;">,</span></span>
+<span class="line"><span style="color:#24292E;">  },</span></span>
+<span class="line"><span style="color:#24292E;">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D;">// universal validation function</span></span>
+<span class="line"><span style="color:#D73A49;">const</span><span style="color:#24292E;"> </span><span style="color:#6F42C1;">validate</span><span style="color:#24292E;"> </span><span style="color:#D73A49;">=</span><span style="color:#24292E;"> (</span><span style="color:#E36209;">schema</span><span style="color:#24292E;">, </span><span style="color:#E36209;">values</span><span style="color:#24292E;">) </span><span style="color:#D73A49;">=&gt;</span><span style="color:#24292E;"> {</span></span>
+<span class="line"><span style="color:#24292E;">  </span><span style="color:#D73A49;">for</span><span style="color:#24292E;"> (field </span><span style="color:#D73A49;">in</span><span style="color:#24292E;"> schema) {</span></span>
+<span class="line"><span style="color:#24292E;">    </span><span style="color:#D73A49;">if</span><span style="color:#24292E;"> (schema[field].required) {</span></span>
+<span class="line"><span style="color:#24292E;">      </span><span style="color:#D73A49;">if</span><span style="color:#24292E;"> (</span><span style="color:#D73A49;">!</span><span style="color:#24292E;">values[field]) {</span></span>
+<span class="line"><span style="color:#24292E;">        </span><span style="color:#D73A49;">return</span><span style="color:#24292E;"> </span><span style="color:#005CC5;">false</span></span>
+<span class="line"><span style="color:#24292E;">      }</span></span>
+<span class="line"><span style="color:#24292E;">    }</span></span>
+<span class="line"><span style="color:#24292E;">  }</span></span>
+<span class="line"><span style="color:#24292E;">  </span><span style="color:#D73A49;">return</span><span style="color:#24292E;"> </span><span style="color:#005CC5;">true</span></span>
+<span class="line"><span style="color:#24292E;">}</span></span>
+<span class="line"><span style="color:#24292E;">console.</span><span style="color:#6F42C1;">log</span><span style="color:#24292E;">(</span><span style="color:#6F42C1;">validate</span><span style="color:#24292E;">(schema, { first: </span><span style="color:#032F62;">&#39;Bruce&#39;</span><span style="color:#24292E;"> })) </span><span style="color:#6A737D;">// false</span></span>
+<span class="line"><span style="color:#24292E;">console.</span><span style="color:#6F42C1;">log</span><span style="color:#24292E;">(</span><span style="color:#6F42C1;">validate</span><span style="color:#24292E;">(schema, { first: </span><span style="color:#032F62;">&#39;Bruce&#39;</span><span style="color:#24292E;">, last: </span><span style="color:#032F62;">&#39;Wayne&#39;</span><span style="color:#24292E;"> })) </span><span style="color:#6A737D;">// true</span></span></code></pre></div>`,3),e=[o];function t(c,r,y,i,B,d){return a(),n("div",null,e)}const u=s(p,[["render",t]]);export{f as __pageData,u as default};
