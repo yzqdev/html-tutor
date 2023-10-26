@@ -1,6 +1,7 @@
 # js数组
 
 ## filter
+
 ```js
 function push(array, ...values) {
   const { length: arrayLength } = array;
@@ -35,7 +36,9 @@ console.log(
 );
 
 ```
+
 ## map
+
 ```js
 Array.prototype.myMap = function (fn, context) {
   const array = this;
@@ -86,4 +89,83 @@ console.log(
   })
 );
 
+```
+
+合并对象并不是一个罕见的问题，你很有可能已经遇到过这个问题，并且在不远的未来还会再次遇到。不同的是，在过去你手动完成了大部分工作，但从现在开始，你将使用 ES6 的新功能。
+
+```ts
+// 合并对象
+const product = { name: 'Milk', packaging: 'Plastic', price: '5$' }
+const manufacturer = { name: 'Company Name', address: 'The Company Address' }
+
+const productManufacturer = { ...product, ...manufacturer };
+console.log(productManufacturer); 
+// 输出 { name: "Company Name", packaging: "Plastic", price: "5$", address: "The Company Address" }
+
+// 将对象数组合并成一个对象
+const cities = [
+    { name: 'Paris', visited: 'no' },
+    { name: 'Lyon', visited: 'no' },
+    { name: 'Marseille', visited: 'yes' },
+    { name: 'Rome', visited: 'yes' },
+    { name: 'Milan', visited: 'no' },
+    { name: 'Palermo', visited: 'yes' },
+    { name: 'Genoa', visited: 'yes' },
+    { name: 'Berlin', visited: 'no' },
+    { name: 'Hamburg', visited: 'yes' },
+    { name: 'New York', visited: 'yes' }
+];
+
+const result = cities.reduce((accumulator, item) => {
+  return {
+    ...accumulator,
+    [item.name]: item.visited
+  }
+}, {});
+
+console.log(result);
+/* 输出
+Berlin: "no"
+Genoa: "yes"
+Hamburg: "yes"
+Lyon: "no"
+Marseille: "yes"
+Milan: "no"
+New York: "yes"
+Palermo: "yes"
+Paris: "no"
+Rome: "yes"
+*/
+```
+
+数组映射
+
+```ts
+const cities = [
+    { name: 'Paris', visited: 'no' },
+    { name: 'Lyon', visited: 'no' },
+    { name: 'Marseille', visited: 'yes' },
+    { name: 'Rome', visited: 'yes' },
+    { name: 'Milan', visited: 'no' },
+    { name: 'Palermo', visited: 'yes' },
+    { name: 'Genoa', visited: 'yes' },
+    { name: 'Berlin', visited: 'no' },
+    { name: 'Hamburg', visited: 'yes' },
+    { name: 'New York', visited: 'yes' }
+];
+
+const cityNames = Array.from(cities, ({ name}) => name);
+console.log(cityNames);
+// 输出 ["Paris", "Lyon", "Marseille", "Rome", "Milan", "Palermo", "Genoa", "Berlin", "Hamburg", "New York"]
+```
+
+动态设置对象属性名
+
+```ts
+const dynamic = 'email';
+let user = {
+    name: 'John',
+    [dynamic]: 'john@doe.com'
+}
+console.log(user); // 输出 { name: "John", email: "john@doe.com" }
 ```

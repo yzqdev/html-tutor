@@ -15,7 +15,9 @@ outDir:"../dist",
   title: 'html教程',
   description: 'Vue 驱动的静态网站生成器',
   vue: {},
-
+markdown:{
+theme: {light:'github-light',dark:'solarized-light'}
+},
   themeConfig: {
     logo: '/vue.svg',
     search: {
