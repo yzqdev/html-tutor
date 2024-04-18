@@ -1,4 +1,4 @@
-import { DefaultTheme } from 'vitepress/types/default-theme'
+import { DefaultTheme } from 'vitepress'
 
 export const navbar: DefaultTheme.NavItem[] = [
   {
@@ -9,7 +9,10 @@ export const navbar: DefaultTheme.NavItem[] = [
   {
     text: 'css',
     activeMatch: '^/css-tutor/',
-    link: '/css-tutor/',
+   
+    items:[{text:'css tutor', link: '/css-tutor/',},
+      {text:'css selector', link: '/css-tutor/selector/index', activeMatch: '^/css-tutor/selector/',}
+    ]
   },
   {
     text: 'dom',

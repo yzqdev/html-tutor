@@ -107,7 +107,14 @@ export const sidebar: DefaultTheme.Sidebar = {
         { text: 'layout', link: '/css-tutor/css-layout' },
         { text: '三角形', link: '/css-tutor/triangle' },
       ],
-    },
+    },{
+      text:'css选择器',
+      collapsed:false,
+      items:[
+          { text: '主页', link: '/css-tutor/selector/' },
+          { text: '元素', link: '/css-tutor/selector/element' },
+      ]
+    }
   ],
   '/others': [
     {

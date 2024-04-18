@@ -2,6 +2,10 @@
   --vp-layout-max-width: 95%;
   --vp-sidebar-width: 15rem;
   --vp-nav-height-desktop: 50px;
+
+  --vp-c-brand-1: #42b883;
+  --vp-c-brand-2: #747bff;
+
 }
 .content-container {
   max-width: 100% !important;

@@ -9,19 +9,21 @@
   "scripts": {
     "build": "vitepress build src",
     "dev": "vitepress dev src --host",
-     "preview": "vitepress preview src",
+    "preview": "vitepress preview src",
     "lint": "prettier --write src/**/*.{vue,ts,css,scss,html,js} docs/**/*.ts"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "@sugarat/theme": "^0.3.0",
     "dayjs": "^1.11.10",
-    "element-plus": "^2.4.1",
-    "vue": "^3.3.6"
+    "element-plus": "^2.5.3",
+    "vue": "^3.4.23"
   },
   "devDependencies": {
-    "@types/node": "^18.18.6",
-    "prettier": "^3.0.3",
-    "sass": "^1.69.4",
-    "typescript": "^5.2.2",
-    "vitepress": "^1.0.0-rc.23"
+    "@types/node": "^20.12.7",
+    "prettier": "^3.2.5",
+    "sass": "^1.75.0",
+    "typescript": "^5.4.5",
+    "vitepress": "^1.1.0"
   }
 }
